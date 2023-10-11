@@ -1,9 +1,11 @@
 const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode: "development",
     entry: {
-        main: "./jserver-sputify/src/js/index.js"
+        main: "./src/js/index.js"
     },
     module: {
         rules:[
@@ -25,6 +27,11 @@ module.exports = {
       plugins: [
         new MiniCssExtractPlugin({
             filename: 'assets/scss/[name].css'
+        }),
+        ,
+        new HtmlWebpackPlugin({
+            template: './public/index.html',
+            minify: true
         })
       ],
 }
