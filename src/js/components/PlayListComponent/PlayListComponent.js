@@ -1,6 +1,11 @@
 import React from 'react';
 
 const PlayListComponent = () => {
+    useEffect(() => {
+        // Update the document title using the browser API
+        document.title = `You clicked ${count} times`;
+      });
+
     return (
         <section className="playlist layout__playlist">
             <div className="heading">Playlists</div>
