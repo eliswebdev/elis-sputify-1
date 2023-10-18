@@ -1,0 +1,11 @@
+.trackslist {
+    overflow-y: scroll;
+    &__table-wrapper {
+      
+      height: 100%;
+    }
+    &__table {
+      width: 100%;
+      text-align: left;
+    }
+  }
