@@ -15,6 +15,7 @@ class RootComponent extends React.Component {
       <div className="layout__main-wrapper">
         <aside className="sidebar layout__sidebar">
           <div className="heading">Sputofy</div>
+          <img className='sidebar__img' src='https://media1.giphy.com/media/l0HU5bbgdW6qzJsmQ/giphy.gif'/>
         </aside>
         <div className="layout__content">
           <PlayListComponent />
