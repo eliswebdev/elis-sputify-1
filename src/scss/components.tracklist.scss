@@ -7,5 +7,12 @@
     &__table {
       width: 100%;
       text-align: left;
+      font-size: 12px;
+    }
+    tr {
+      border-bottom: 1px dotted #666;
+    }
+    td {
+      padding: 6px 0 ;
     }
   }
