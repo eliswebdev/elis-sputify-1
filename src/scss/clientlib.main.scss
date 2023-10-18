@@ -3,6 +3,7 @@
 @include meta.load-css('generics.reset.scss');
 @include meta.load-css('objects.layout.scss');
 @include meta.load-css('objects.heading.scss');
+@include meta.load-css('components.sidebar.scss');
 @include meta.load-css('components.playlist.scss');
 @include meta.load-css('components.tracklist.scss');
 @include meta.load-css('components.player.scss');

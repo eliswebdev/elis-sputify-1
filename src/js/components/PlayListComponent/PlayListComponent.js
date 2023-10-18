@@ -1,11 +1,16 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+
+
 
 const PlayListComponent = () => {
-    useEffect(() => {
-        // Update the document title using the browser API
-        document.title = `You clicked ${count} times`;
-      });
-
+    let playList = [];
+    useEffect(()=>{
+      fetch('../../../../db.json')
+      .then(response => response.json())
+      .then(json => playList.push(json.playlists))
+    })
+    console.log(playList)
+  
     return (
         <section className="playlist layout__playlist">
             <div className="heading">Playlists</div>
