@@ -10,7 +10,7 @@ const PlayListComponent = () => {
         setPlayList(json.playlists);
       })
       .catch((error) => console.error("Error fetching data:", error));
-  }, []); // Empty dependency array to ensure useEffect runs only once
+  }, []);
 
   return (
     <section className="playlist layout__playlist">
