@@ -1,6 +1,16 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
 const PlayListComponent = () => {
+    let playList = [];
+    useEffect(()=>{
+      fetch('../../../../db.json')
+      .then(response => response.json())
+      .then(json => json.playlists.forEach(element => {
+        playList.push(element);
+      }))
+    })
+    console.log(playList)
+  
     return (
         <section className="playlist layout__playlist">
             <div className="heading">Playlists</div>

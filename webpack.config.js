@@ -6,7 +6,6 @@ module.exports = {
     mode: "development",
     entry: {
         main: "./src/js/index.js"
-
     },
     module: {
         rules:[
