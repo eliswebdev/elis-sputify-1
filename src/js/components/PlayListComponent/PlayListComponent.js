@@ -16,8 +16,8 @@ const PlayListComponent = () => {
     <section className="playlist layout__playlist">
       <div className="heading">Playlists</div>
       <div className="playlist__cards">
-        {playList.map((playCard, index) => (
-          <section className="playlist__card" key={index}>
+        {playList.map((playCard) => (
+          <section className="playlist__card" key={playCard.id}>
             <div className="playlist__card-coverarea">
               <img className="playlist__card-img" src={playCard.picture} alt="Playlist Cover" />
             </div>
