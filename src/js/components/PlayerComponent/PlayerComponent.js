@@ -3,15 +3,20 @@ import React from 'react';
 const PlayerComponent = () => {
   return (
     <section className="player layout__player">
-      <button id="play-icon">
-        Play
-      </button>
-      <div id="audio-player-container">
-        <span id="current-time" className="time">
+      <div className='player__controller'>
+        <button className="player__btn-play">
+          Play
+        </button>
+        <button className="player__btn-stop">
+          stop
+        </button>
+      </div>
+      <div className="player__progress">
+        <span className="player__current-time">
           0:00
         </span>
-        <input type="range" id="seek-slider" max={100} defaultValue={0} />
-        <span id="duration" className="time">
+        <input type="range" max={100} defaultValue={0} />
+        <span className="player__duration">
           0:00
         </span>
       </div>
