@@ -35,5 +35,6 @@ module.exports = {
             minify: true
         })
       ],
+      watch: true,
 }
 //comment
