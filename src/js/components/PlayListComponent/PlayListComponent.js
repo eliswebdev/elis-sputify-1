@@ -1,13 +1,13 @@
 import React, {useEffect} from 'react';
 
-
-
 const PlayListComponent = () => {
     let playList = [];
     useEffect(()=>{
       fetch('../../../../db.json')
       .then(response => response.json())
-      .then(json => playList.push(json.playlists))
+      .then(json => json.playlists.forEach(element => {
+        playList.push(element);
+      }))
     })
     console.log(playList)
   
