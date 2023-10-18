@@ -32,4 +32,11 @@
       translate: -50% -50%;
       width: 100%;
     }
+    &__card-description {
+      padding: 12px;
+      padding-top: 0;
+      color: black;
+      text-align: center;
+      font-size: 12px;
+    }
   }
